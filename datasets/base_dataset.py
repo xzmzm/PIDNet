@@ -39,8 +39,8 @@ class BaseDataset(data.Dataset):
         else:
             image = image.astype(np.float32)
         image = image / 255.0
-        image -= self.mean
-        image /= self.std
+        #image -= self.mean
+        #image /= self.std
         return image
 
     def label_transform(self, label):
